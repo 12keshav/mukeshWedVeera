@@ -1,0 +1,112 @@
+header{
+    margin-bottom: 4rem;
+
+    position: relative;
+    .ToolBannerCarousel{
+        .carousel{
+            .carousel-inner{
+                max-height: 700px;
+                .carousel-item{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .carousel-indicators{
+                display: none;
+            }
+            .carousel-control-prev{
+                display: none;
+            }
+            .carousel-control-next{
+                display: none;
+            }
+        }
+    }
+    .ToolBannerCarousel::before{
+        content: "";
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: rgba(0,0,0,0.4);
+        display: block;
+    }
+    .ToolBanner{
+        width: 100%;
+        float: left;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        opacity: 5;
+        top: 30%;
+        margin: 0 auto;
+        text-align: center;
+        .ToolBannerText{
+            margin-bottom:5rem;
+            ul{
+                li{
+                    h1{
+                        color: #fff;
+                        font-size: 80px;
+                        font-weight: 600;
+                        font-family: 'Libre Baskerville', serif;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-weight: normal;
+                        font-family: 'Libre Baskerville', serif;
+                        color: #fff;
+                        
+        margin-bottom: 30px;
+    
+                    }
+                }
+                
+            }
+        
+        }
+        .DearFrnds{
+                h2{
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 400;
+                    font-family: 'Libre Baskerville', serif;
+                    
+                }
+                svg{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 400;
+                }
+        }
+    }
+}
+@media only screen and (min-width:320px) and (max-width: 767px){
+    header {
+        .ToolBanner{
+            top: 10%;
+            .ToolBannerText{
+                margin-bottom: 0rem;
+                ul{
+                    li{
+                        p{
+                            font-size: 13px;
+                        }
+                        h1{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
